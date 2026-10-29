@@ -6,43 +6,36 @@
     <title>Student Attendance System</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
   <body>
     <div class="container">
       <div class="icon">🎓</div>
-
-      <h1>Student Attendance</h1>
+      <h1 class="title">Student Attendance</h1>
       <p class="subtitle">
         Add student details to your attendance management system.
       </p>
-
-      <form>
+      <form onsubmit="addStudent(event)" class="student-form">
         <div class="form-group">
           <label for="student-name">Student Name</label>
           <input
             type="text"
             id="student-name"
-            name="studentName"
             placeholder="Enter student full name"
             required
           />
         </div>
-
         <div class="form-group">
           <label for="student-image">Student Image</label>
-          <input
-            type="file"
-            id="student-image"
-            name="studentImage"
-            accept="image/*"
-            required
-          />
+          <input type="file" id="student-image" accept="image/*" required />
         </div>
-
         <button type="submit">Add Student →</button>
       </form>
-
-      <p class="footer">Student Management Portal</p>
+      <p class="footer">
+        Student Management Portal. Designed & Developed by
+        <a href="https://github.com/hashirdilmuradzai">Hashir Dilmurad Zai</a>
+      </p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./js/supabase.js"></script>
+    <script src="./js/student.js"></script>
   </body>
 </html>

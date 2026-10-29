@@ -37,7 +37,7 @@ body {
   font-size: 30px;
 }
 
-h1 {
+.title {
   color: #ffffff;
   font-size: 27px;
   margin-bottom: 10px;
@@ -54,7 +54,7 @@ h1 {
   margin-bottom: 22px;
 }
 
-label {
+.student-form label {
   display: block;
   color: #e2e8f0;
   font-size: 14px;
@@ -62,7 +62,7 @@ label {
   margin-bottom: 10px;
 }
 
-input {
+.student-form input {
   width: 100%;
   padding: 14px 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -74,22 +74,22 @@ input {
   transition: 0.3s;
 }
 
-input:focus {
+.student-form input:focus {
   border-color: #818cf8;
   box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
 }
 
-input::placeholder {
+.student-form input::placeholder {
   color: #94a3b8;
 }
 
-input[type="file"] {
+.student-form input[type="file"] {
   cursor: pointer;
   color: #cbd5e1;
   padding: 11px;
 }
 
-input[type="file"]::file-selector-button {
+.student-form input[type="file"]::file-selector-button {
   padding: 8px 12px;
   margin-right: 12px;
   border: none;
@@ -99,7 +99,7 @@ input[type="file"]::file-selector-button {
   cursor: pointer;
 }
 
-button {
+.student-form button {
   width: 100%;
   padding: 15px;
   border: none;
@@ -113,12 +113,12 @@ button {
   margin-top: 5px;
 }
 
-button:hover {
+.student-form button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
 }
 
-button:active {
+.student-form button:active {
   transform: scale(0.98);
 }
 
@@ -129,12 +129,20 @@ button:active {
   font-size: 12px;
 }
 
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #94a3b8;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 26px 22px;
   }
 
-  h1 {
+  .title {
     font-size: 24px;
   }
 }
